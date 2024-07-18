@@ -1,9 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+        <title>Wsg World</title>
+        <link rel="icon" href="./assets/singularity.png" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
-    <body></body>
+    <body>
+        <div>
+            <video id = "background" muted autoplay loop>
+                    <source src = "assets/background.mp4" type = "video/mp4"></src>
+            </video>
+            <audio id = "backgroundMusic">
+                    <source src = "assets/interstellarTrack.mp3" type="audio/mpeg" loop>
+            </audio>
+        </div>
+        <div class="header">
+            <div class="left-bar-header">
+                <a href="./index.html" class="logo-container">
+                    <div class="logo-text">Home</div>
+                </a>
+                <img id = "audioController" src = "assets/audioControllerOff.png" onclick = "audioController(); imageChange();">
+            </div>
+            <div class="right-bar-header">
+                <a href="./pages/contact.html">
+                    <div class="contact-container">
+                        <div class="contact-text">Contact</div>
+                    </div>
+                </a>
+                <a href="./pages/projects.html">
+                    <div class="project-container">
+                        <div class="project-text">Projects</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+    <script src = "script.js"></script>
 </html>

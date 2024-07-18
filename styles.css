@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+a {
+    text-decoration: none;
+}
+html {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(1.2);
+    z-index: -2;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    z-index: 9;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 20px;
+}
+.left-bar-header {
+    width: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-bar-header {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 40px;
+}
+#audioController {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: 0 1em 0 2em;
+}
+.logo-container {
+    margin: 0.7em 0 0.7em 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 6em;
+    text-decoration: none;
+    gap: 16px;
+}
+.logo-text {
+    color: white;
+    font-size: 24px;
+    font-family: "Courier Prime";
+}
+.contact-container,
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-text:hover,
+.project-text:hover {
+    text-shadow:
+        0 0 5px rgb(59, 210, 230),
+        0 0 12px rgb(59, 210, 230),
+        0 0 20px rgb(59, 210, 230);
+    color: white;
+}
+.contact-text,
+.project-text {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    position: relative;
+    padding: 0 6px;
+    cursor: pointer;
+    font-family: "Courier Prime";
+}
+.contact-text:hover:after,
+.project-text:hover:after {
+    width: 100%;
+}
+.contact-text:after,
+.project-text:after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 217, 255),
+        rgb(0, 4, 255)
+    );
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
