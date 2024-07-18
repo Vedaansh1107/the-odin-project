@@ -1,2 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+a {
+    text-decoration: none;
+}
 html {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(1.2);
+    z-index: -2;
+}
+.header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    z-index: 9;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.center-bar-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    font-family: "Courier Prime";
+    font-size: 24px;
+    text-shadow:
+        0 0 5px rgb(59, 210, 230),
+        0 0 12px rgb(59, 210, 230),
+        0 0 20px rgb(59, 210, 230);
+}
+.left-bar-header {
+    width: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-container {
+    margin: 0.7em 0 0.7em 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 6em;
+    text-decoration: none;
+    gap: 16px;
+}
+.logo-text {
+    color: white;
+    font-size: 24px;
+    font-family: "Courier Prime";
+}
+
+.info-container {
+    width: 75%;
+    height: 60%;
+    border-radius: 24px;
+    margin: 9em auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 2em rgb(60, 60, 60);
+}
+.left-info {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.right-info {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.profile-image {
+    width: 40%;
+}
+.image-text {
+    color: white;
+    text-shadow:
+        0 0 5px rgb(59, 210, 230),
+        0 0 12px rgb(59, 210, 230),
+        0 0 20px rgb(59, 210, 230);
+    font-size: 18px;
+    font-family: "Courier Prime";
+}
+
+.left-title {
+    font-family: "Courier Prime";
+    font-size: 30px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.left-description {
+    font-family: "Courier Prime";
+    font-size: 18px;
+    color: white;
+}
+.github,
+.email,
+.discord {
+    cursor: pointer;
+}
+
+.github {
+    color: white;
+    font-size: 18px;
+    font-family: "Courier Prime";
+    text-decoration: none;
+}
+.email {
+    color: white;
+    font-size: 18px;
+    font-family: "Courier Prime";
+}
+.discord {
+    color: white;
+    font-size: 18px;
+    font-family: "Courier Prime";
+    text-decoration: none;
+}
+.ps {
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: "Courier Prime";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pps {
+    padding-left: 20px;
+    color: white;
+    font-size: 14px;
+    font-family: "Courier Prime";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.discord:hover,
+.email:hover,
+.github:hover {
+    text-shadow:
+        0 0 5px rgb(59, 210, 230),
+        0 0 12px rgb(59, 210, 230),
+        0 0 20px rgb(59, 210, 230);
+    color: white;
+}
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 14px;
+    background: transparent;
+    border: 2px solid white;
 }
